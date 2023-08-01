@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --darkGreen: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --gray: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --head: 2rem;
+    --text: 1rem;
+    --mont: 'Montserrat', sans-serif;
+    --fraun: 'Fraunces', serif;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 700px;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+.container-img{
+    width: 45%;
+    overflow: hidden;
+}
+
+.container-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.details{
+    width: 55%;
+    background-color: white;
+    padding: 30px;
+}
+
+#product-category{
+    font-size: var(--text);
+    font-family: var(--mont);
+    letter-spacing: 0.3em;
+    color: var(--gray);
+}
+
+#product-name{
+    margin: 0.6em 0 0.7em 0;
+    width: 80%;
+    font-size: var(--head);
+    font-family: var(--fraun);
+    font-weight: 700;
+}
+
+#description{
+    width: 96%;
+    font-family: var(--mont);
+    font-size: var(--text);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--gray);
+}
+
+#price{
+    font-family: var(--fraun);
+    font-size: var(--head);
+    color: var(--darkGreen);
+}
+
+#price small{
+    font-size: var(--text);
+    color: var(--gray);
+    font-family: var(--mont);
+    margin-left: 5px;
+}
+
+#add-to-cart{
+    margin: 2em 0 1em 0;
+    background-color: var(--darkGreen);
+    color: var(--white);
+    font-family: var(--mont);
+    font-size: var(--text);
+    border-radius: 0.7em;
+    width: 100%;
+    padding: 1em 0;
+    border: 0;
+    cursor: pointer;
+}
+
+#add-to-cart img{
+    margin-right: 10px;
+}
+
+#add-to-cart:hover{
+    /* background-image: url(/images/icon-cart.png); */
+    background-color: hsl(158, 36%, 19%);
+}
